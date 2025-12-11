@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NordikAdventures", "NordikAdventures\NordikAdventures.csproj", "{71F02934-55DC-40A0-B719-69FFAEBD4302}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58C89EF2-0F97-456C-9A25-2A1DF8148934} = {58C89EF2-0F97-456C-9A25-2A1DF8148934}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NordikAdventuresAPI", "NordikAdventuresAPI\NordikAdventuresAPI.csproj", "{58C89EF2-0F97-456C-9A25-2A1DF8148934}"
 EndProject
