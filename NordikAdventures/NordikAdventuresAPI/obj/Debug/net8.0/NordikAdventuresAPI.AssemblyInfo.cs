@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NordikAdventuresAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bad4baf4124c4ca11437f699e31fe8019410bc7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac3137c91d6b4bab849e4556b643a12327a1c4c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NordikAdventuresAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NordikAdventuresAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
