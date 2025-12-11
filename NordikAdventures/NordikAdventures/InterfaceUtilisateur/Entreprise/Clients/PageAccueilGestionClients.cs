@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NordikAdventures
+namespace NordikAdventures.InterfaceUtilisateur.Entreprise.Clients
 {
-    public partial class Form1 : Form
+    public partial class PageAccueilGestionClients : Form
     {
-        public Form1()
+        public PageAccueilGestionClients()
         {
             InitializeComponent();
         }

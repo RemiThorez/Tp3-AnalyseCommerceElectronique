@@ -3,42 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\controleur\\produitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\controleur\\produitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\controleur\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\controleur\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\controleur\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\controleur\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\modeles\\fournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\modeles\\fournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\modeles\\commandesfournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\modeles\\commandesfournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\modeles\\achats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\modeles\\achats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventuresapi\\modeles\\bdcontextenordik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C89EF2-0F97-456C-9A25-2A1DF8148934}|NordikAdventuresAPI\\NordikAdventuresAPI.csproj|solutionrelative:nordikadventuresapi\\modeles\\bdcontextenordik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventures\\services\\servicesproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|solutionrelative:nordikadventures\\services\\servicesproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventures\\services\\servicesclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|solutionrelative:nordikadventures\\services\\servicesclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|c:\\users\\user\\documents\\uqar\\3. automne 2025\\inf23307 analyse des applications en ecommerce\\tp3\\tp3-analysecommerceelectronique\\nordikadventures\\nordikadventures\\interfaceutilisateur\\client\\pagecinscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71F02934-55DC-40A0-B719-69FFAEBD4302}|NordikAdventures\\NordikAdventures.csproj|solutionrelative:nordikadventures\\interfaceutilisateur\\client\\pagecinscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -91,123 +55,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProduitController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\ProduitController.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Controleur\\ProduitController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\ProduitController.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Controleur\\ProduitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:47:18.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthentificationController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\AuthentificationController.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Controleur\\AuthentificationController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\AuthentificationController.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Controleur\\AuthentificationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:47:05.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\ClientController.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Controleur\\ClientController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Controleur\\ClientController.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Controleur\\ClientController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:46:49.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Fournisseurs.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\Fournisseurs.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Modeles\\Fournisseurs.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\Fournisseurs.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Modeles\\Fournisseurs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:44:49.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommandesFournisseurs.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\CommandesFournisseurs.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Modeles\\CommandesFournisseurs.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\CommandesFournisseurs.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Modeles\\CommandesFournisseurs.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:41:42.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Achats.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\Achats.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Modeles\\Achats.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\Achats.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Modeles\\Achats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:38:47.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BdContexteNordik.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\BdContexteNordik.cs",
-              "RelativeDocumentMoniker": "NordikAdventuresAPI\\Modeles\\BdContexteNordik.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventuresAPI\\Modeles\\BdContexteNordik.cs",
-              "RelativeToolTip": "NordikAdventuresAPI\\Modeles\\BdContexteNordik.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwB4AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:31:16.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ServicesProduits.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\Services\\ServicesProduits.cs",
-              "RelativeDocumentMoniker": "NordikAdventures\\Services\\ServicesProduits.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\Services\\ServicesProduits.cs",
-              "RelativeToolTip": "NordikAdventures\\Services\\ServicesProduits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:18:17.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ServicesClient.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\Services\\ServicesClient.cs",
-              "RelativeDocumentMoniker": "NordikAdventures\\Services\\ServicesClient.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\Services\\ServicesClient.cs",
-              "RelativeToolTip": "NordikAdventures\\Services\\ServicesClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:18:10.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "PageCInscription.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageCInscription.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageCInscription.cs",
@@ -220,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "PageAccueil.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\PageAccueil.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\PageAccueil.cs",
@@ -233,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "ValidateurChamps.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\Utilitaires\\ValidateurChamps.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\Utilitaires\\ValidateurChamps.cs",
@@ -246,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "PageConnexionClient.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageConnexionClient.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageConnexionClient.cs",
@@ -259,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "PageCProfilClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageCProfilClient.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageCProfilClient.cs",
@@ -271,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "PageCProduitDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageCProduitDetail.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageCProduitDetail.cs",
@@ -283,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "PageConnexionClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageConnexionClient.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageConnexionClient.cs",
@@ -295,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "PageCInscription.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageCInscription.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageCInscription.cs",
@@ -307,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "PageCAccueilClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\UQAR\\3. Automne 2025\\INF23307 Analyse des applications en Ecommerce\\Tp3\\Tp3-AnalyseCommerceElectronique\\NordikAdventures\\NordikAdventures\\InterfaceUtilisateur\\Client\\PageCAccueilClient.cs",
               "RelativeDocumentMoniker": "NordikAdventures\\InterfaceUtilisateur\\Client\\PageCAccueilClient.cs",
