@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NordikAdventuresAPI.Modeles
@@ -21,6 +22,7 @@ namespace NordikAdventuresAPI.Modeles
         public CommandesFournisseurs CommandeFournisseur {  get; set; }
 
         [ForeignKey("SKU")]
+        [DeleteBehavior(DeleteBehavior.NoAction)]
         [Required]
         public Produits LeProduit { get; set; }
     }

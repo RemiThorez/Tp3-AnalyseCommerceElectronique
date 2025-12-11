@@ -29,6 +29,5 @@ namespace NordikAdventuresAPI.Modeles
 
         public ICollection<ActivitesClients> LesActivitesDuClient { get; set; } = new List<ActivitesClients>();
         public ICollection<FacturesClients> LesFacturesClient { get; set; } = new List<FacturesClients>();
-        public ICollection<PaiementsClients> LesPaiementsClient { get; set; } = new List<PaiementsClients>();
     }
 }

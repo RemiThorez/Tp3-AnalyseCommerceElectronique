@@ -14,7 +14,7 @@ namespace NordikAdventuresAPI.Modeles
         [Required]
         public int Id { get; set; }
         [Required]
-        public int IdEmploye { get; set; }
+        public string IdEmploye { get; set; }
         [Required]
         public DateTime Date { get; set; }
         [Required]

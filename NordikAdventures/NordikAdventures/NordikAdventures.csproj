@@ -160,23 +160,10 @@
     <Compile Include="InterfaceUtilisateur\Client\PageCDesProduits.Designer.cs">
       <DependentUpon>PageCDesProduits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modeles\Achats.cs" />
-    <Compile Include="Modeles\ActivitesClients.cs" />
-    <Compile Include="Modeles\ActivitesStocks.cs" />
-    <Compile Include="Modeles\Categories.cs" />
     <Compile Include="Modeles\Clients.cs" />
-    <Compile Include="Modeles\CommandesFournisseurs.cs" />
     <Compile Include="Modeles\DTOs\ConnexionDTO.cs" />
     <Compile Include="Modeles\Employes.cs" />
-    <Compile Include="Modeles\FacturesClients.cs" />
-    <Compile Include="Modeles\Fournisseurs.cs" />
-    <Compile Include="Modeles\PaiementsClients.cs" />
-    <Compile Include="Modeles\PaiementsFournisseurs.cs" />
-    <Compile Include="Modeles\ParamFisc.cs" />
-    <Compile Include="Modeles\Payes.cs" />
     <Compile Include="Modeles\Produits.cs" />
-    <Compile Include="Modeles\Stocks.cs" />
-    <Compile Include="Modeles\Ventes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ServicesClient.cs" />
