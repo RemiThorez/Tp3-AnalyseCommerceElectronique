@@ -16,8 +16,12 @@ namespace NordikAdventuresAPI.Modeles
         [Required]
         public int IdCommandeFournisseur { get; set; }
 
-        [ForeignKey("IdUtilisateur")]
+        [ForeignKey("IdCommandeFournisseur")]
         [Required]
         public CommandesFournisseurs CommandeFournisseur {  get; set; }
+
+        [ForeignKey("SKU")]
+        [Required]
+        public Produits LeProduit { get; set; }
     }
 }

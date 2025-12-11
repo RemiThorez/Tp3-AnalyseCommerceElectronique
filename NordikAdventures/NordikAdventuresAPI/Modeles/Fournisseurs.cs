@@ -18,5 +18,6 @@ namespace NordikAdventuresAPI.Modeles
         public float RistourneFournisseur { get; set; }
 
         public ICollection<CommandesFournisseurs> LesCommandesAuxFournisseur { get; set; } = new List<CommandesFournisseurs>();
+        public ICollection<Produits> LesProduits { get; set; } = new List<Produits>();
     }
 }

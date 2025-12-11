@@ -7,6 +7,7 @@ namespace NordikAdventuresAPI.Controleur
     [ApiController]
     public class ClientController : ControllerBase
     {
+        [HttpPost("creer")]
         public IActionResult CreerClient()
         {
             throw new NotImplementedException();

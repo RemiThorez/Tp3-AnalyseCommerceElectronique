@@ -10,7 +10,7 @@ namespace NordikAdventuresAPI.Modeles
 {
     public partial class BdContexteNordik : DbContext
     {
-        private string _stringConnexion = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Database=BdInfosEtudes;";
+        private string _stringConnexion = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Database=BdNordik;";
 
         public BdContexteNordik() { }
 
@@ -40,5 +40,6 @@ namespace NordikAdventuresAPI.Modeles
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(_stringConnexion);
 
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

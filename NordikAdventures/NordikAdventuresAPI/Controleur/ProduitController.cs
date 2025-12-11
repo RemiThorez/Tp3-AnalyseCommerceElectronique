@@ -7,11 +7,13 @@ namespace NordikAdventuresAPI.Controleur
     [ApiController]
     public class ProduitController : ControllerBase
     {
+        [HttpPost("creer")]
         public IActionResult CreerProduit()
         {
             throw new NotImplementedException();
         }
 
+        [HttpGet()]
         public IActionResult ObtenirProduits()
         {
             throw new NotImplementedException();

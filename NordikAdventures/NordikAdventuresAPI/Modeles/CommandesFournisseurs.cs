@@ -31,5 +31,6 @@ namespace NordikAdventuresAPI.Modeles
         public Fournisseurs Fournisseur { get; set; }
 
         public ICollection<Achats> LesAchats { get; set; } = new List<Achats>();
+        public ICollection<PaiementsFournisseurs> LesPaiementsFournisseur { get; set; } = new List<PaiementsFournisseurs>();
     }
 }
