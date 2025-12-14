@@ -9,14 +9,25 @@ namespace NordikAdventuresAPI.JWT
     /// <summary>
     /// Contient toutes les méthodes concernant l'autorisation
     /// </summary>
+    
+    public struct INFO_AUTH
+    {
+        public INFO_AUTH() { }
+        public readonly string TYPE_CLIENT { get; } = "client";
+        public readonly string TYPE_EMPLOYE { get; } = "employe";
+        public readonly string TYPE_IDENTIFIANT { get; } = "qui";
+        public readonly string ID { get; } = "id";
+        public readonly string CONTEXTE_UTILISATEUR { get; } = "Utilisateur";
+        public readonly string CONTEXTE_TYPE_UTILISATEUR { get; } = "TypeUtilisateur";
+    }
+
+
     public class Authentification
     {
         private BdContexteNordik _bd;
         private ConfigApp _configApp;
-        private const string TYPE_CLIENT = "client";
-        private const string TYPE_EMPLOYE = "employe";
-        private const string TYPE_IDENTIFIANT = "qui";
-        private const string ID = "id";
+
+        private INFO_AUTH _infoAuth = new INFO_AUTH();
 
         /// <summary>
         /// Le constructeur de la classe autorisation
@@ -26,6 +37,7 @@ namespace NordikAdventuresAPI.JWT
         {
             _bd = bd;
             _configApp = configApp;
+
         }
         /// <summary>
         /// Permet la génération de jeton
@@ -42,7 +54,7 @@ namespace NordikAdventuresAPI.JWT
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 // On ajoute le id de l'usager au token
-                Subject = new ClaimsIdentity(new[] { new Claim(ID, client.ClientID.ToString()), new Claim(TYPE_IDENTIFIANT, TYPE_CLIENT) }),
+                Subject = new ClaimsIdentity(new[] { new Claim(_infoAuth.ID, client.ClientID.ToString()), new Claim(_infoAuth.TYPE_IDENTIFIANT, _infoAuth.TYPE_CLIENT) }),
                 // Valide pour 1 jour (on peut changer pour plus ou moins)
                 Expires = DateTime.UtcNow.AddDays(1),
 
@@ -66,7 +78,7 @@ namespace NordikAdventuresAPI.JWT
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 // On ajoute le id de l'usager au token
-                Subject = new ClaimsIdentity(new[] { new Claim(ID, employe.Id.ToString()),new Claim(TYPE_IDENTIFIANT, TYPE_EMPLOYE) }),
+                Subject = new ClaimsIdentity(new[] { new Claim(_infoAuth.ID, employe.Id.ToString()),new Claim(_infoAuth.TYPE_IDENTIFIANT, _infoAuth.TYPE_EMPLOYE) }),
                 // Valide pour 1 jour (on peut changer pour plus ou moins)
                 Expires = DateTime.UtcNow.AddDays(1),
 
@@ -104,20 +116,21 @@ namespace NordikAdventuresAPI.JWT
                 var jwtJeton = (JwtSecurityToken)validatedToken;
 
                 // On récupère le UserId du token (en supposant qu'on l'a ajouté à la création)
-                string idUtilisateur = jwtJeton.Claims.First(x => x.Type == ID).Value;
-                string typeUtilisateur = jwtJeton.Claims.First(x => x.Type == TYPE_IDENTIFIANT).Value;
-                if (typeUtilisateur == TYPE_EMPLOYE)
+                string idUtilisateur = jwtJeton.Claims.First(x => x.Type == _infoAuth.ID).Value;
+                string typeUtilisateur = jwtJeton.Claims.First(x => x.Type == _infoAuth.TYPE_IDENTIFIANT).Value;
+                if (typeUtilisateur == _infoAuth.TYPE_EMPLOYE)
                 {
                     // On récupère les infos de l'usager de la BD.
                     // REMARQUE: on doit avoir accès à la BD si on veut récupérer l'usager ici.
-                    context.Items["Utilisateur"] = await _bd.TablesEmployes.FindAsync(idUtilisateur);
+                    context.Items[_infoAuth.CONTEXTE_UTILISATEUR] = await _bd.TablesEmployes.FindAsync(idUtilisateur);
                 }
-                else if (typeUtilisateur == TYPE_CLIENT)
+                else if (typeUtilisateur == _infoAuth.TYPE_CLIENT)
                 {
                     // On récupère les infos de l'usager de la BD.
                     // REMARQUE: on doit avoir accès à la BD si on veut récupérer l'usager ici.
-                    context.Items["Utilisateur"] = await _bd.TablesClients.FindAsync(idUtilisateur);
+                    context.Items[_infoAuth.CONTEXTE_UTILISATEUR] = await _bd.TablesClients.FindAsync(idUtilisateur);
                 }
+                context.Items[_infoAuth.CONTEXTE_TYPE_UTILISATEUR] = typeUtilisateur;
             }
             catch
             {

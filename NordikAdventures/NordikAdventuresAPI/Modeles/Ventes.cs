@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NordikAdventuresAPI.Modeles.DTOs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -10,6 +11,16 @@ namespace NordikAdventuresAPI.Modeles
 {
     public class Ventes
     {
+        public Ventes() { }
+
+        public Ventes(ProduitQteDTO produitDTO, Produits produits, FacturesClients factures) 
+        {
+            SKU = produitDTO.SKU;
+            Qte = produitDTO.Qte;
+            PrixVenteHistorique = produits.PrixVente;
+            IdFacture = factures.Id;
+        }
+
         [Key]
         [Required]
         public int Id { get; set; }

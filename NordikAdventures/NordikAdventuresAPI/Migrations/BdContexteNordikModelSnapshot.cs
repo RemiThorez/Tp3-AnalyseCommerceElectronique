@@ -260,6 +260,9 @@ namespace NordikAdventuresAPI.Migrations
                     b.Property<double>("MontantDu")
                         .HasColumnType("float");
 
+                    b.Property<int>("Satisfaction")
+                        .HasColumnType("int");
+
                     b.Property<double>("SousTotal")
                         .HasColumnType("float");
 
@@ -353,6 +356,9 @@ namespace NordikAdventuresAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Nom")
+                        .HasColumnType("int");
+
                     b.Property<float>("TauxTaxe")
                         .HasColumnType("real");
 
@@ -428,8 +434,11 @@ namespace NordikAdventuresAPI.Migrations
 
             modelBuilder.Entity("NordikAdventuresAPI.Modeles.Stocks", b =>
                 {
-                    b.Property<string>("SKU")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("DelaiLivraison")
                         .HasColumnType("int");
@@ -444,6 +453,10 @@ namespace NordikAdventuresAPI.Migrations
                     b.Property<int>("QteReserve")
                         .HasColumnType("int");
 
+                    b.Property<string>("SKU")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("SeuilMinimun")
                         .HasColumnType("int");
 
@@ -453,7 +466,10 @@ namespace NordikAdventuresAPI.Migrations
                     b.Property<DateTime>("dateEntree")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("SKU");
+                    b.HasKey("Id");
+
+                    b.HasIndex("SKU")
+                        .IsUnique();
 
                     b.ToTable("TablesStocks");
                 });

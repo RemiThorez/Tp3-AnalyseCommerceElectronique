@@ -13,8 +13,6 @@ namespace NordikAdventures.Utilitaires
                     return false;
                 MailAddress ma = new MailAddress(courriel);
 
-                //Vérifiez que le courriel n'est pas déjà utilisé !
-
                 return true;
             }
             catch (FormatException)
@@ -23,7 +21,6 @@ namespace NordikAdventures.Utilitaires
             }
         }
 
-        //Nom, mdp, 
         public static bool ValiderChampsCommun(string str)
         {
             if(str == "" || str == " ")
@@ -33,7 +30,15 @@ namespace NordikAdventures.Utilitaires
 
         public static bool ValiderTel(string tel)
         {
-            return true;
+            try
+            {
+                int.Parse(tel);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
         }
     }
 }

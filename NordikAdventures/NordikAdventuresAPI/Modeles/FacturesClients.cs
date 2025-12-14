@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NordikAdventuresAPI.Modeles.DTOs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -10,6 +11,20 @@ namespace NordikAdventuresAPI.Modeles
 {
     public class FacturesClients
     {
+        public FacturesClients() { }
+
+        public FacturesClients(CommandeClientDTO commande, string idClient, double sousTotal, double taxes)
+        {
+            Date = DateTime.Now;
+            IdClient = idClient;
+            SousTotal = sousTotal;
+            Taxes = taxes;
+            MontantDu = sousTotal+taxes;
+            DateLimitePaiement = DateTime.Now.AddDays(7);
+            Satisfaction = commande.Satisfaction;
+            Statut = "PR";
+        }
+
         [Key]
         [Required]
         public int Id { get; set; }
@@ -23,8 +38,11 @@ namespace NordikAdventuresAPI.Modeles
         public double Taxes { get; set; }
         [Required]
         public double MontantDu { get; set; }
+        // PR pour partiel, PA pour payée et RT pour retard
         [Required]
         public string Statut { get; set; }
+        [Required]
+        public int Satisfaction { get; set; }
         [Required]
         public DateTime DateLimitePaiement { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NordikAdventuresAPI.Modeles.DTOs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,6 +10,13 @@ namespace NordikAdventuresAPI.Modeles
 {
     public class Fournisseurs
     {
+        public Fournisseurs() { }
+        public Fournisseurs(CreerFournisseurDTO newFour) 
+        {
+            Nom = newFour.Nom;
+            RistourneFournisseur = newFour.RistourneFournisseur;
+        }
+
         [Key]
         [Required]
         public int Id { get; set; }

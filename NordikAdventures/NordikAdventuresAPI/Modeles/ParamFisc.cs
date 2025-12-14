@@ -13,6 +13,8 @@ namespace NordikAdventuresAPI.Modeles
         [Required]
         public int Id { get; set; }
         [Required]
+        public int Nom { get; set; }
+        [Required]
         public float TauxTaxe { get; set; }
     }
 }

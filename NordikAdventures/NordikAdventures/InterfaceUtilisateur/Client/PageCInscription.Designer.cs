@@ -42,11 +42,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_confirmer = new System.Windows.Forms.Button();
             this.msg_erreur = new System.Windows.Forms.Label();
+            this.cb_typeClient = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_annuler
             // 
-            this.btn_annuler.Location = new System.Drawing.Point(25, 275);
+            this.btn_annuler.Location = new System.Drawing.Point(25, 304);
             this.btn_annuler.Name = "btn_annuler";
             this.btn_annuler.Size = new System.Drawing.Size(224, 23);
             this.btn_annuler.TabIndex = 0;
@@ -57,20 +59,25 @@
             // txt_mdp_conf
             // 
             this.txt_mdp_conf.Location = new System.Drawing.Point(91, 171);
+            this.txt_mdp_conf.MaxLength = 64;
             this.txt_mdp_conf.Name = "txt_mdp_conf";
+            this.txt_mdp_conf.PasswordChar = '*';
             this.txt_mdp_conf.Size = new System.Drawing.Size(158, 20);
             this.txt_mdp_conf.TabIndex = 1;
             // 
             // txt_mdp
             // 
             this.txt_mdp.Location = new System.Drawing.Point(91, 145);
+            this.txt_mdp.MaxLength = 64;
             this.txt_mdp.Name = "txt_mdp";
+            this.txt_mdp.PasswordChar = '*';
             this.txt_mdp.Size = new System.Drawing.Size(158, 20);
             this.txt_mdp.TabIndex = 2;
             // 
             // txt_tel
             // 
             this.txt_tel.Location = new System.Drawing.Point(91, 119);
+            this.txt_tel.MaxLength = 12;
             this.txt_tel.Name = "txt_tel";
             this.txt_tel.Size = new System.Drawing.Size(158, 20);
             this.txt_tel.TabIndex = 3;
@@ -78,6 +85,7 @@
             // txt_courriel
             // 
             this.txt_courriel.Location = new System.Drawing.Point(91, 93);
+            this.txt_courriel.MaxLength = 64;
             this.txt_courriel.Name = "txt_courriel";
             this.txt_courriel.Size = new System.Drawing.Size(158, 20);
             this.txt_courriel.TabIndex = 4;
@@ -85,6 +93,7 @@
             // txt_nom
             // 
             this.txt_nom.Location = new System.Drawing.Point(91, 67);
+            this.txt_nom.MaxLength = 45;
             this.txt_nom.Name = "txt_nom";
             this.txt_nom.Size = new System.Drawing.Size(158, 20);
             this.txt_nom.TabIndex = 5;
@@ -147,7 +156,7 @@
             // 
             // btn_confirmer
             // 
-            this.btn_confirmer.Location = new System.Drawing.Point(25, 304);
+            this.btn_confirmer.Location = new System.Drawing.Point(25, 333);
             this.btn_confirmer.Name = "btn_confirmer";
             this.btn_confirmer.Size = new System.Drawing.Size(224, 23);
             this.btn_confirmer.TabIndex = 12;
@@ -160,16 +169,40 @@
             this.msg_erreur.AutoSize = true;
             this.msg_erreur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.msg_erreur.ForeColor = System.Drawing.Color.Red;
-            this.msg_erreur.Location = new System.Drawing.Point(22, 203);
+            this.msg_erreur.Location = new System.Drawing.Point(22, 225);
             this.msg_erreur.Name = "msg_erreur";
             this.msg_erreur.Size = new System.Drawing.Size(0, 13);
             this.msg_erreur.TabIndex = 13;
+            // 
+            // cb_typeClient
+            // 
+            this.cb_typeClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_typeClient.FormattingEnabled = true;
+            this.cb_typeClient.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cb_typeClient.Items.AddRange(new object[] {
+            "Particulier",
+            "Entreprise"});
+            this.cb_typeClient.Location = new System.Drawing.Point(28, 197);
+            this.cb_typeClient.Name = "cb_typeClient";
+            this.cb_typeClient.Size = new System.Drawing.Size(221, 21);
+            this.cb_typeClient.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 197);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(11, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "*";
             // 
             // PageCInscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 340);
+            this.ClientSize = new System.Drawing.Size(280, 367);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cb_typeClient);
             this.Controls.Add(this.msg_erreur);
             this.Controls.Add(this.btn_confirmer);
             this.Controls.Add(this.label6);
@@ -208,5 +241,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_confirmer;
         private System.Windows.Forms.Label msg_erreur;
+        private System.Windows.Forms.ComboBox cb_typeClient;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -23,7 +23,7 @@ namespace NordikAdventuresAPI.Controleur
         [HttpPost("employe")]
         public IActionResult ConnexionEmploye([FromBody] ConnexionDTO infoConn)
         {
-            Employes? employe = _bdContexteNordik.TablesEmployes.Where(e => e.Courriel == infoConn.courriel && e.Mdp == Hacheur.HacheurProfessionel(infoConn.mdp)).First();
+            Employes? employe = _bdContexteNordik.TablesEmployes.Where(e => e.Courriel == infoConn.courriel && e.Mdp == Hacheur.HacheurProfessionel(infoConn.mdp)).FirstOrDefault();
             if (employe == null)
             {
                 return Unauthorized();
@@ -34,7 +34,7 @@ namespace NordikAdventuresAPI.Controleur
         [HttpPost("client")]
         public IActionResult ConnexionClient([FromBody] ConnexionDTO infoConn)
         {
-            Clients? client = _bdContexteNordik.TablesClients.Where(c => c.Courriel == infoConn.courriel && c.Mdp == Hacheur.HacheurProfessionel(infoConn.mdp)).First();
+            Clients? client = _bdContexteNordik.TablesClients.Where(c => c.Courriel == infoConn.courriel && c.Mdp == Hacheur.HacheurProfessionel(infoConn.mdp)).FirstOrDefault();
             if (client == null)
             {
                 return Unauthorized();

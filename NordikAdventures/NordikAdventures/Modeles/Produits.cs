@@ -10,8 +10,6 @@ namespace NordikAdventures.Modeles
 {
     public class Produits
     {
-        
-        
         public string SKU { get; set; }
         
         public string CodeFournisseur { get; set; }
@@ -26,9 +24,8 @@ namespace NordikAdventures.Modeles
         
         public double PrixVente { get; set; }
         
-        public int IdFournisseur { get; set; }
-        
-        public int IdCategorie { get; set; }
-
+        public int QteDisponible { get; set; }
+        public Fournisseurs LeFournisseur { get; set; }
+        public Categories LaCategorie { get; set; }
     }
 }

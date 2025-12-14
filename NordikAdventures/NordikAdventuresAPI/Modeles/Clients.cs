@@ -20,12 +20,15 @@ namespace NordikAdventuresAPI.Modeles
         public string Nom { get; set; }
         [Required]
         public string Tel { get; set; }
+
+        //Particulier (pa) || entreprise (en)
         [Required]
         public string Type { get; set; }
+        //Actif(A), inactif(I), prospect(P), Fidèle(F)
         [Required]
-        public char Statut { get; set; }
+        public char Statut { get; set; } = 'P';
         [Required]
-        public int Satisfaction { get; set; }
+        public int Satisfaction { get; set; } = -1;
 
         public ICollection<ActivitesClients> LesActivitesDuClient { get; set; } = new List<ActivitesClients>();
         public ICollection<FacturesClients> LesFacturesClient { get; set; } = new List<FacturesClients>();

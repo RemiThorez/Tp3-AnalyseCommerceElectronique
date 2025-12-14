@@ -81,6 +81,7 @@ namespace NordikAdventuresAPI.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Nom = table.Column<int>(type: "int", nullable: false),
                     TauxTaxe = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
@@ -100,6 +101,7 @@ namespace NordikAdventuresAPI.Migrations
                     Taxes = table.Column<double>(type: "float", nullable: false),
                     MontantDu = table.Column<double>(type: "float", nullable: false),
                     Statut = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Satisfaction = table.Column<int>(type: "int", nullable: false),
                     DateLimitePaiement = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -312,6 +314,8 @@ namespace NordikAdventuresAPI.Migrations
                 name: "TablesStocks",
                 columns: table => new
                 {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     SKU = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Qte = table.Column<int>(type: "int", nullable: false),
                     QteReserve = table.Column<int>(type: "int", nullable: false),
@@ -323,7 +327,7 @@ namespace NordikAdventuresAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TablesStocks", x => x.SKU);
+                    table.PrimaryKey("PK_TablesStocks", x => x.Id);
                     table.ForeignKey(
                         name: "FK_TablesStocks_TablesProduits_SKU",
                         column: x => x.SKU,
@@ -419,6 +423,12 @@ namespace NordikAdventuresAPI.Migrations
                 name: "IX_TablesProduits_IdFournisseur",
                 table: "TablesProduits",
                 column: "IdFournisseur");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TablesStocks_SKU",
+                table: "TablesStocks",
+                column: "SKU",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_TablesVentes_IdFacture",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NordikAdventuresAPI.Modeles.DTOs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -10,6 +11,20 @@ namespace NordikAdventuresAPI.Modeles
 {
     public class Produits
     {
+        Produits() { }
+        public Produits(CreerProduitDTO infoProduit)
+        {
+            SKU = infoProduit.SKU;
+            CodeFournisseur = infoProduit.CodeFournisseur;
+            NomProduit = infoProduit.NomProduit;
+            Statut = infoProduit.Statut;
+            Poids = infoProduit.Poids;
+            CoutAchat = infoProduit.CoutAchat;
+            PrixVente = infoProduit.PrixVente;
+            IdFournisseur = infoProduit.IdFournisseur;
+            IdCategorie = infoProduit.IdCategorie;
+        }
+
         [Key]
         [Required]
         public string SKU { get; set; }

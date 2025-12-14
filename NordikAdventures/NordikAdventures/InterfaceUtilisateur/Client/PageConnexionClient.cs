@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NordikAdventures.InterfaceUtilisateur.Client;
 using NordikAdventures.Modeles;
-
-
+using NordikAdventures.Services;
 using NordikAdventures.Utilitaires;
 
 namespace NordikAdventures.InterfaceUtilisateur
@@ -18,6 +17,7 @@ namespace NordikAdventures.InterfaceUtilisateur
     public partial class PageConnexionClient : Form
     {
         private readonly Form _parent;
+        private bool nePasAfficherParent = false;
         public PageConnexionClient(Form parent)
         {
             _parent = parent;
@@ -30,20 +30,35 @@ namespace NordikAdventures.InterfaceUtilisateur
             this.Close();
         }
 
-        private void btn_confirmer_Click(object sender, EventArgs e)
+        private async void btn_confirmer_Click(object sender, EventArgs e)
         {
+            ServicesAuth servicesAuth = new ServicesAuth();
             msg_erreur.Text = "";
-            Clients client = Authentification.ValiderAuthentificationClient(txt_courriel.Text, txt_mdp.Text);
+            string jeton = await servicesAuth.ConnexionClient(txt_courriel.Text, txt_mdp.Text);
 
-            if (client == null)
+            if (jeton == "")
             {
                 msg_erreur.Text = "Identifiants de connexion invalide !";
             }
             else
             {
+                ServicesClient servicesClient = new ServicesClient();
+                Clients client = await servicesClient.OtenirClient(jeton);
+
+                if (client.ClientID == "")
+                {
+                    client = await servicesClient.OtenirClient(jeton);
+                    if(client.ClientID == "")
+                    {
+                        client.Nom = "ERREUR_OBTENTION_CLIENT";
+                    }
+                }
+                client.Jeton = jeton;
                 Form pageAccueilClient = new PageCAccueilClient(_parent, client);
+                pageAccueilClient.Visible = true;
+                nePasAfficherParent = true;
+                this.Close();
             }
-            
         }
 
         private void btn_inscri_Click(object sender, EventArgs e)
@@ -55,7 +70,10 @@ namespace NordikAdventures.InterfaceUtilisateur
 
         private void fermeture(object sender, FormClosingEventArgs e)
         {
-            _parent.Visible = true;
+            if (!nePasAfficherParent)
+            {
+                _parent.Visible = true;
+            }
         }
     }
 }

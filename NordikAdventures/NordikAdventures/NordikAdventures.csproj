@@ -33,8 +33,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.3\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.9.0.3\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.9.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +77,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigAPI.cs" />
+    <Compile Include="InterfaceUtilisateur\Client\CartePaiement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Client\CartePaiement.Designer.cs">
+      <DependentUpon>CartePaiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Client\CarteProduit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Client\CarteProduit.Designer.cs">
+      <DependentUpon>CarteProduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceUtilisateur\Client\PageCAccueilClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +102,17 @@
     <Compile Include="InterfaceUtilisateur\Client\PageCInscription.Designer.cs">
       <DependentUpon>PageCInscription.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfaceUtilisateur\Client\PageCProfilClient.cs">
+    <Compile Include="InterfaceUtilisateur\Client\PageCPaiements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceUtilisateur\Client\PageCProfilClient.Designer.cs">
-      <DependentUpon>PageCProfilClient.cs</DependentUpon>
+    <Compile Include="InterfaceUtilisateur\Client\PageCPaiements.Designer.cs">
+      <DependentUpon>PageCPaiements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Client\PageCPanier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Client\PageCPanier.Designer.cs">
+      <DependentUpon>PageCPanier.cs</DependentUpon>
     </Compile>
     <Compile Include="InterfaceUtilisateur\Entreprise\Clients\PageAccueilGestionClients.cs">
       <SubType>Form</SubType>
@@ -160,24 +210,52 @@
     <Compile Include="InterfaceUtilisateur\Client\PageCDesProduits.Designer.cs">
       <DependentUpon>PageCDesProduits.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modeles\Categories.cs" />
+    <Compile Include="Modeles\DTOs\CommandeClientDTO.cs" />
+    <Compile Include="Modeles\DTOs\PaiementClientDTO.cs" />
+    <Compile Include="Modeles\DTOs\ProduitQteDTO.cs" />
+    <Compile Include="Modeles\FacturesClients.cs" />
+    <Compile Include="Modeles\Fournisseurs.cs" />
+    <Compile Include="Modeles\Paniers.cs" />
     <Compile Include="Modeles\Clients.cs" />
     <Compile Include="Modeles\DTOs\ConnexionDTO.cs" />
+    <Compile Include="Modeles\DTOs\CreerClientDTO.cs" />
     <Compile Include="Modeles\Employes.cs" />
     <Compile Include="Modeles\Produits.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServicesAuth.cs" />
     <Compile Include="Services\ServicesClient.cs" />
+    <Compile Include="Services\ServicesFinances.cs" />
     <Compile Include="Services\ServicesProduits.cs" />
     <Compile Include="Utilitaires\Authentification.cs" />
     <Compile Include="Utilitaires\ValidateurChamps.cs" />
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\CartePaiement.resx">
+      <DependentUpon>CartePaiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\CarteProduit.resx">
+      <DependentUpon>CarteProduit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCAccueilClient.resx">
       <DependentUpon>PageCAccueilClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCDesProduits.resx">
+      <DependentUpon>PageCDesProduits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCInscription.resx">
       <DependentUpon>PageCInscription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\Client\PageConnexionClient.resx">
       <DependentUpon>PageConnexionClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCPaiements.resx">
+      <DependentUpon>PageCPaiements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCPanier.resx">
+      <DependentUpon>PageCPanier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\Client\PageCProduitDetail.resx">
+      <DependentUpon>PageCProduitDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\PageAccueil.resx">
       <DependentUpon>PageAccueil.cs</DependentUpon>
@@ -191,6 +269,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -204,5 +283,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
