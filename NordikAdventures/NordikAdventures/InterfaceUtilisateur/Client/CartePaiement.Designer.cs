@@ -40,7 +40,7 @@
             // l_total
             // 
             this.l_total.AutoSize = true;
-            this.l_total.Location = new System.Drawing.Point(123, 53);
+            this.l_total.Location = new System.Drawing.Point(178, 53);
             this.l_total.Name = "l_total";
             this.l_total.Size = new System.Drawing.Size(27, 13);
             this.l_total.TabIndex = 17;
@@ -49,7 +49,7 @@
             // l_taxes
             // 
             this.l_taxes.AutoSize = true;
-            this.l_taxes.Location = new System.Drawing.Point(123, 31);
+            this.l_taxes.Location = new System.Drawing.Point(178, 31);
             this.l_taxes.Name = "l_taxes";
             this.l_taxes.Size = new System.Drawing.Size(32, 13);
             this.l_taxes.TabIndex = 16;
@@ -58,7 +58,7 @@
             // l_soustotal
             // 
             this.l_soustotal.AutoSize = true;
-            this.l_soustotal.Location = new System.Drawing.Point(123, 9);
+            this.l_soustotal.Location = new System.Drawing.Point(178, 9);
             this.l_soustotal.Name = "l_soustotal";
             this.l_soustotal.Size = new System.Drawing.Size(49, 13);
             this.l_soustotal.TabIndex = 15;
